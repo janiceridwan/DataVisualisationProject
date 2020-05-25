@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Data Visualisation"/>
+        <meta name="keywords" content="HTML, CSS, D3"/>
+        <meta name="author" content="Janice Ridwan"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="total_prod.js"></script>
+        <script src="stacked_lifecycle.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <title>Food For Thought</title>
+    </head>
+    <body>
+        <article>
+        <header>
+            <h1 class="header">Food For Thought.</h1>
+            <p id="subheader"><em>Visualising the impact of food and agriculture on the environment.</em></p>
+        </header>
+
+        <div >           
+            <h2>Environmental Impacts of Food Production</h2>
+            <p>Although food is essential for humans, its production is a massive environmental concern. 
+            In recent years, there has been a lot of attention to meat production, which directly contributes to sustainability
+            issues such as carbon dioxide emissions. However, there are also concerns within the crop production industry, 
+            which poses a threat to biodiversity as well as contribute largely to the issues posed by meat production, namely land and water.</p>            
+        </div>
+        <section class="graycard">
+            <h2 id="charttitle" > Livestock vs. Agriculture</h2> 
+            <div class="grid-container">
+                <div class="column">
+                    <div id = "special-grid-container">
+                        <button  class="button" id = "land">Land Use (m<sup>2</sup>/FU)</button>
+                        <button  class="button" id = "ghg" > GHG (kgCO<sup>2</sup>eq/FU)</button>                    
+                    </div>
+                    <div class="grid-container">
+                        <p id="bartotal"></p>  
+                                             
+                    </div>
+                </div>    
+                <div class="column">
+                    <div id="pie-grid-container">
+                        <h3>Land Use</h3>
+                        <p id="pietotal1"></p> 
+                        <h3> GHG</h3>
+                        <p id="pietotal2"></p>  
+                    </div>
+                </div>      
+            </div>
+                 
+            <p id = "caption">
+                Livestock includes meat, dairy and seafood whereas crops encompasses all fruits, vegetables, grains and their byproducts.
+                <br/>The charts is measured with 'Functional Units' (FU). The pie chart shows the percentage of land use within food production.
+            </p>               
+        </section>
+
+        <div >           
+            <h2>Carbon Footprint</h2>
+            <p></p>            
+        </div>
+        <section class="graycard">
+            <div class = "grid-container">
+                <p id = "stackedbar"></p>
+            </div>
+            <p id = "caption">GHG emissions by each step in a food product group's lifecycle.</p>
+        </section>	
+        <section>                      
+            <h2>What We Can Do</h2>
+            <p>solutions</p>
+        </section> 
+
+        <br>
+    </article>
+    <footer><p>Janice Ridwan (101994340) COS30045 Data Visualisation Project</p></footer>
+
+    </body>
+</html>

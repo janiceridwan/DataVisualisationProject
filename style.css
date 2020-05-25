@@ -1,0 +1,211 @@
+/* filename: style.css for assignment by Janice
+author: Janice
+created: 25-Apr-2020
+last modified: 
+description: datvis.html*/
+
+
+@font-face {
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	src: url(Lato.woff);
+}
+article {
+    background-color:#f7fbff ;
+		max-width: 100%;
+}
+body {
+  background-color:#f7fbff ;
+}
+
+/*setting font variant, family, and size of h1*/
+h1, h2, h3, p, body { 
+	font-variant: normal;
+  font-family: Lato, arial;}
+
+#charttitle {
+  text-align: center;
+}
+#caption {
+  margin-top: 5px;
+	color: #08306b;
+	font-size: 0.9vw;
+	text-align: justify;
+}
+#subheader {
+	color: #08306b;
+	font-size: 1.5vw;
+	text-align: center;
+}
+h1 {
+	font-size: 2vw;
+}
+
+div.tooltip {   
+    position: absolute;           
+    text-align: center;           
+    width: 100px;                  
+    height: 60px;             
+    padding: 2px;             
+    font: 1em sans-serif;        
+    background: #464E51;
+    color: white;   
+    border: 0px;      
+    border-radius: 8px;           
+    pointer-events: none;         
+  }
+
+header {
+    background-color: #deebf7;
+		padding:20px;
+		text-align: center;
+		height:20vw;
+		left: 0;
+		top:0;
+    right:0;
+    border-radius: 5px;
+}
+
+footer { 
+    clear: both;
+    background-color:  #deebf7;
+		padding:20px;
+		width:100%;/*fixes the footer to fill the screen width*/
+		text-align: center;
+    color: #08306b;
+    border-radius: 5px;
+  }
+
+strong {font-size: 1.1em; }
+
+header h1 {
+	color: #08306b;
+  font-size: 5vw;
+}
+
+h3 {
+  font-size: 12;
+  text-align: left;
+  margin: 0px 0px 0px 40px;
+}
+.xaxis {
+  fill: black;
+  font-size: 1.5em;
+  border-color: black;
+  padding-left: 10px;
+}
+.yaxis {
+  fill: black;
+  font-size: 1.5em;
+  border-color: black;
+}
+
+.column {
+  display: grid;  
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;/*automatically aligns grid contents into one row with equal spacing*/
+  grid-gap: 10px;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+#special-grid-container {
+  display:grid;
+	grid-template-columns: 200px 200px;
+	grid-gap:5px;
+  padding:5px;
+  align-items: left;;
+}
+#bar-grid-container {
+	display:grid;
+	grid-template-columns: auto auto;
+  padding:0px;
+  margin: 0px;
+  flex-direction: row;
+
+}
+
+#pie-grid-container {
+  flex-direction: column;
+  grid-template-columns: auto auto;
+  padding:0px;
+  margin:0px;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  min-height: 550px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), /*creates a shadow effect*/
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.graycard {
+  background-color: #f7f7f7;/*same card as above, but gray coloured*/
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+#land.button {
+  background-color: #a0af14;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 0px 0px 0px 50px;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;/*defines an inline element that can have width and height*/
+  font-size: 1em;
+  width: 200px;
+  float: left;
+}
+
+#ghg.button {
+  background-color: #296584;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 0px 0px 0px 50px;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;/*defines an inline element that can have width and height*/
+  font-size: 1em;
+  width: 200px;
+  float: left;
+
+}
+
+#land.button:hover {
+  background-color: #464E51;/*changes button colour when hovering over*/
+  color: white;
+}
+#ghg.button:hover {
+  background-color: #464E51;/*changes button colour when hovering over*/
+  color: white;
+}
+
+
+::selection {/*when selecting text, highlights the background gray and changes text colour to black*/
+  color: black; 
+  background: #ddd;
+}
+
+
+
+
+
+
+
+
+
