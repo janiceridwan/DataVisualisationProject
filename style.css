@@ -1,0 +1,326 @@
+/* filename: style.css for assignment by Janice
+author: Janice
+created: 25-Apr-2020
+last modified: 
+description: datvis.html*/
+
+
+@font-face {
+	font-family: Lato, Arial, Helvetica, sans-serif;
+	src: url(Lato.woff);
+}
+article {
+    max-width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+body {
+  background-color:#f7fbff ;
+}
+
+/*setting font variant, family, and size of h1*/
+h1, h2, h3, p, body { 
+	font-variant: normal;
+  font-family: Lato, arial;}
+
+#charttitle {
+  text-align: center;
+}
+#caption {
+  margin-top: 5px;
+	color: #08306b;
+	font-size: 0.9vw;
+	text-align: justify;
+}
+#subheader {
+	color: #08306b;
+	font-size: 1.5vw;
+	text-align: center;
+}
+h1 {
+	font-size: 2vw;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+header {
+    background-color: #deebf7;
+		padding:20px;
+		text-align: center;
+		height:16vw;
+		left: 0;
+		top:0;
+    right:0;
+    border-radius: 5px;
+}
+
+footer { 
+    background-color:  #deebf7;
+		padding:20px;
+		text-align: center;
+    color: #08306b;
+    height:5vw;
+		left: 0;
+		top:0;
+    right:0;
+    border-radius: 5px;
+  }
+
+strong {font-size: 1.1em; }
+
+header h1 {
+	color: #08306b;
+  font-size: 5vw;
+}
+
+h3 {
+  font-size: 12;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+}
+
+
+::selection {/*when selecting text, highlights the background gray and changes text colour to black*/
+  color: black; 
+  background: #ddd;
+}
+
+/*axis styles*/
+
+.xaxis {
+  fill: black;
+  font-size: 1em;
+  border-color: black;
+  padding-left: 10px;
+}
+.yaxis {
+  fill: black;
+  font-size: 1.2em;
+  border-color: black;
+}
+
+/*grids for html*/
+.column {
+  display: grid;  
+  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;/*automatically aligns grid contents into one row with equal spacing*/
+  grid-gap: 10px;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+#special-grid-container {
+  display:grid;
+	grid-template-columns: 200px 200px;
+	grid-gap:5px;
+  padding:5px;
+  align-items: left;;
+}
+
+#special-grid-container1 {
+  flex-direction: row;
+  display:grid;
+	grid-template-columns: auto auto auto auto;
+  padding:5px;
+  align-items: left;
+}
+
+
+#bar-grid-container {
+	display:grid;
+	grid-template-columns: auto auto;
+  padding:0px;
+  margin: 0px;
+  flex-direction: row;
+
+}
+
+#pie-grid-container {
+  flex-direction: column;
+  grid-template-columns: auto auto;
+  padding:0px;
+  margin:0px;
+  align-items: right;
+}
+
+.card {
+  background-color: white;
+  min-height: 550px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), /*creates a shadow effect*/
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.graycard {
+  background-color: #f7f7f7;/*same card as above, but gray coloured*/
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+/*buttons*/
+#land.button {
+  background-color: #a0af14;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 0px 0px 0px 50px;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;/*defines an inline element that can have width and height*/
+  font-size: 1em;
+  width: 200px;
+  float: left;
+}
+
+#ghg.button {
+  background-color: #296584;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 0px 0px 0px 50px;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;/*defines an inline element that can have width and height*/
+  font-size: 1em;
+  width: 200px;
+  float: left;
+}
+
+#land2.button {
+  background-color: #a0af14;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin: 0px 0px 0px 10px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;/*defines an inline element that can have width and height*/
+  font-size: 1em;
+  width: 200px;
+  float: left;
+}
+#ghg2.button {
+  background-color: #296584;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin: 0px 0px 0px 10px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;/*defines an inline element that can have width and height*/
+  font-size: 1em;
+  width: 200px;
+  float: left;
+}
+
+#water.button {
+  background-color:#00858f ;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin: 0px 0px 0px 10px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;/*defines an inline element that can have width and height*/
+  font-size: 1em;
+  width: 200px;
+  float: left;
+}
+
+#eutro.button {
+  background-color: #009f6b;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin: 0px 0px 0px 10px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;/*defines an inline element that can have width and height*/
+  font-size: 1em;
+  width: 250px;
+  float: left;
+}
+
+#land.button:hover {
+  background-color: #464E51;/*changes button colour when hovering over*/
+  color: white;
+}
+#ghg.button:hover {
+  background-color: #464E51;/*changes button colour when hovering over*/
+  color: white;
+}
+#ghg2.button:hover {
+  background-color: #464E51;/*changes button colour when hovering over*/
+  color: white;
+}
+#land2.button:hover {
+  background-color: #464E51;/*changes button colour when hovering over*/
+  color: white;
+}
+#water.button:hover {
+  background-color: #464E51;/*changes button colour when hovering over*/
+  color: white;
+}
+#eutro.button:hover {
+  background-color: #464E51;/*changes button colour when hovering over*/
+  color: white;
+}
+
+
+
+
+
+/*tooltip styles*/
+div.tooltip {   
+  position: absolute;           
+  text-align: center;           
+  width: auto;                  
+  height: auto;             
+  padding: 10px;          
+  font: 0.8em sans-serif;        
+  background: #464E51;
+  color: white;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}
+
+div.tooltipx {   
+  position: absolute;           
+  text-align: center;           
+  width: 60px;                  
+  height: 20px;             
+  padding: 2px;             
+  font: .8em sans-serif;        
+  background: #464E51;
+  color: white;   
+  border: 0px;      
+  border-radius: 8px;           
+  pointer-events: none;         
+}
+
+
+
+
+
+
+
+

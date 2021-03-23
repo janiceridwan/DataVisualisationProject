@@ -1,0 +1,12 @@
+Domain Code,Domain,Area Code,Area,Element Code,Element,Item Code,Item,Unit,Value,Flag,Flag Description
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6970,Artificial surfaces (including urban and associated areas),1000 ha,39292.61,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6971,Herbaceous crops,1000 ha,1732647.54,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6981,Inland water bodies,1000 ha,378271.33,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6975,Mangroves,1000 ha,18487.12,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6980,Permanent snow and glaciers,1000 ha,1446758.96,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6976,Shrub-covered areas,1000 ha,1677182.36,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6977,"Shrubs and/or herbaceous vegetation, aquatic or regularly flooded",1000 ha,194407.32,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6978,Sparsely natural vegetated areas,1000 ha,892833.67,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6979,Terrestrial barren land,1000 ha,1937435.98,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6974,Tree-covered areas,1000 ha,4382999.49,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+LC,Land Cover,5000,World,5008,Area from CCI_LC,6972,Woody crops,1000 ha,184453.81,A,"Aggregate, may include official, semi-official, estimated or calculated data"
