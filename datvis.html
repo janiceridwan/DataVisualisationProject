@@ -8,71 +8,151 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
         <script src="https://d3js.org/d3.v5.min.js"></script>
         <script src="total_prod.js"></script>
+        <script src="sub_prod.js"></script>
+
         <script src="stacked_lifecycle.js"></script>
-        <link href="style.css" rel="stylesheet">
+        <link type="text/css" href="style.css" rel="stylesheet">
         <title>Food For Thought</title>
     </head>
     <body>
-        <article>
+        
         <header>
             <h1 class="header">Food For Thought.</h1>
             <p id="subheader"><em>Visualising the impact of food and agriculture on the environment.</em></p>
         </header>
 
-        <div >           
-            <h2>Environmental Impacts of Food Production</h2>
-            <p>Although food is essential for humans, its production is a massive environmental concern. 
-            In recent years, there has been a lot of attention to meat production, which directly contributes to sustainability
-            issues such as carbon dioxide emissions. However, there are also concerns within the crop production industry, 
-            which poses a threat to biodiversity as well as contribute largely to the issues posed by meat production, namely land and water.</p>            
-        </div>
-        <section class="graycard">
-            <h2 id="charttitle" > Livestock vs. Agriculture</h2> 
-            <div class="grid-container">
-                <div class="column">
-                    <div id = "special-grid-container">
-                        <button  class="button" id = "land">Land Use (m<sup>2</sup>/FU)</button>
-                        <button  class="button" id = "ghg" > GHG (kgCO<sup>2</sup>eq/FU)</button>                    
-                    </div>
-                    <div class="grid-container">
-                        <p id="bartotal"></p>  
-                                             
-                    </div>
-                </div>    
-                <div class="column">
-                    <div id="pie-grid-container">
-                        <h3>Land Use</h3>
-                        <p id="pietotal1"></p> 
-                        <h3> GHG</h3>
-                        <p id="pietotal2"></p>  
-                    </div>
-                </div>      
+        <article>
+            <div >           
+                <h2>Environmental Impacts of Food Production</h2>
+                <p>Although food is essential for humans, its production is a massive environmental concern. 
+                In recent years, there has been a lot of attention to meat production, which directly contributes to sustainability
+                issues such as carbon dioxide emissions. However, there are also concerns within the crop production industry, 
+                which poses a threat to biodiversity as well as contribute largely to the issues posed by meat production, namely land and water.</p>  
+                <p>
+                    In these visualisations, we'll see the impacts of food on the environment. This includes the land use, greenhouse gas emissions, eutrophying emissions and freshwater use in the industry.
+                    There is a highly unequal distribution of land use between livestock and crops for human consumption, where nearly 80% of the total land used for 
+                    food production is reserved for livestock farming. Although with those numbers we would expect a large amount of food, according to Poore and Nemecek (2018), livestock accounts for only 18% of the world's calories.
+                    This means that just by reducing livestock farming, we will be able to lower the land use and increase the amount of food produced.
+                </p>          
             </div>
-                 
-            <p id = "caption">
-                Livestock includes meat, dairy and seafood whereas crops encompasses all fruits, vegetables, grains and their byproducts.
-                <br/>The charts is measured with 'Functional Units' (FU). The pie chart shows the percentage of land use within food production.
-            </p>               
-        </section>
-
-        <div >           
-            <h2>Carbon Footprint</h2>
-            <p></p>            
-        </div>
-        <section class="graycard">
-            <div class = "grid-container">
-                <p id = "stackedbar"></p>
+            <section class="graycard">
+                <h2 id="charttitle" > Livestock vs. Agriculture</h2> 
+                <div class="grid-container">
+                    <div class="column">
+                        <div id = "special-grid-container">
+                            <button  class="button" id = "land">Land Use (m<sup>2</sup>/FU)</button>
+                            <button  class="button" id = "ghg" > GHG (kgCO<sup>2</sup>eq/FU)</button>                    
+                        </div>
+                        <div class="grid-container">
+                            <p id="bartotal"></p>  
+                                                
+                        </div>
+                    </div>    
+                    <div class="column">
+                        <div id="pie-grid-container">
+                            <h3>Land Use</h3>
+                            <p id="pietotal1"></p> 
+                            <h3> GHG</h3>
+                            <p id="pietotal2"></p> 
+                        </div>                    
+                    </div>      
+                </div>
+                    
+                <p id = "caption">
+                    Source: Poore, J. & Nemecek, T. (2018)  <br/>
+                    Livestock includes meat, dairy and seafood whereas crops encompasses all fruits, vegetables, grains and their byproducts.
+                    The charts are measured with 'Functional Units' (FU). The pie chart shows the percentage of land use within food production.
+                </p>               
+            </section>
+            <div>
+                <p> So how does livestock and agriculture compare to each other? Looking at the bar charts, we can see the large discrepancy between values for livestock and agriculture
+                    in both land use and greenhouse gas emissions. These values are shown in percentages in the pie chart. Livestock takes 80% of the land used for food production, and produces two-thirds of all
+                    greenhouse gas emissions within the industry. 
+                </p>
+                <p>
+                    After seeing the comparison between livestock and agriculture, we know that we have the opportunity to both increase the amount of food available for human consumption
+                    whilst reducing the amount of land used. But what about the specifics? It's also important to know just which products all of us as consumers should think twice about before purchasing.
+                    This brings us to the next visualisation, where the groups are broken down into their components.
+                </p>
             </div>
-            <p id = "caption">GHG emissions by each step in a food product group's lifecycle.</p>
-        </section>	
-        <section>                      
-            <h2>What We Can Do</h2>
-            <p>solutions</p>
-        </section> 
 
-        <br>
-    </article>
-    <footer><p>Janice Ridwan (101994340) COS30045 Data Visualisation Project</p></footer>
+            <section>
+                <div>
+                    <h2>Breaking Down The Groups</h2>
+                </div>
+                <p>
+                    How does the land use of each food category compare? What about the amount of water used?
+                    The visualisations below depict the land use, freshwater use, eutrophying emissions and greenhouse gas emissions of each food product category. 
+                    Each chart can be viewed by pressing the corresponding buttons. 
+                </p>
+                <section class="graycard">
+                    <div id = "special-grid-container1">
+                        <button  class="button" id = "land2">Land Use</button> 
+                        <button  class="button" id = "eutro" > Eutrophying Emissions</button>   
+                        <button  class="button" id = "water">Freshwater Use</button>
+                        <button  class="button" id = "ghg2" > GHG Emissions</button>                    
+                    </div>
+                    
+                    <div class = "grid-container">              
+                        <p id = "subprod"></p>
+                    </div>
+                    <p id = "caption">Source: Poore, J. & Nemecek, T. (2018)  <br/> Comparison between some food product categories, where 'Beef' includes both beef and dairy herds,
+                        and 'Other Meat' includes pork, chicken, land and mutton.</p>
+                </section>
+                <p>
+                    Again, meat products have values significantly higher than their counterparts in all the charts, further showing us how environmentally unsustainable
+                    our current food production is, livestock farming in particular. One category that we should pay most attention to is beef. Beef in the visualisations
+                    includes those from dedicated beef herds and dairy herds, which are also farmed to produce milk and cheese.
+                    Beef, in total, takes up 28 times the amount of land used for fruits and vegetables, and produces the most eutrophying and greenhouse gas emissions. Just by reducing
+                    our beef consumption as consumers, we may be able to reduce the impact that food production has on the environment.
+                </p>
+            </section>
+
+            <section>
+                <div >           
+                    <h2>Carbon Footprint</h2>
+                    <p>What is the carbon footprint of food? Where do the greenhouse gas emissions actually come from?
+                        It's important to know where emissions come from and which process contributes most within the supply chain. Below is a stacked bar chart
+                        showing the GHG emissions of a food product group. The legend shows the corresponding hue for each stage in the supply chain. 'Land' represents land use emissions,
+                        'Feed' shows the emissions from crop production to feed livestock, 'Farm' is the methane produced by animals, rice, emissions from fertilisers and machinery. 'Processing' covers
+                        the emissions from converting raw food to final food items, 'Transport' is the emissions from transport both local and internationally. 'Retail' is emissions from
+                        refrigeration and other processes, and 'Packaging' covers the emissions from production of packaging material and end-of-life disposal.
+                    </p>            
+                </div>
+
+                <section class="graycard">
+                    <h2 id="charttitle" > Emissions in The Supply Chain</h2> 
+                    <div class = "grid-container">
+                        <p id = "stackedbar"></p>
+                    </div>
+                    <p id = "caption">Source: Our World in Data (2020) <br/>GHG emissions by each step in a food product group's lifecycle.</p>
+                </section>	
+                <p>
+                    'Produce and Oils' encompasses all fruits, vegetables, legumes and oils, but the emissions produced by this category still falls significantly below that of meat.
+                    This is due to the methane from livestock waste, one of the most prevalent greenhouse gases. Both coffee and chocolate surprisingly emit more emissions than grains and pulses combined.
+                    This is something to keep in mind next time you reach for coffee or chocolate in the supermarket!
+                </p>
+            </section>
+
+
+            <section>                      
+                <h2>What We Can Do</h2>
+                <p> So after going through the visualisations, what are the steps consumers can take to decrease their negative impact towards the environment?
+                    Instead of eating local, like often suggested, it is much more effective if a larger percentage of the population consumes less meat, 
+                    hence resulting in lower demand for livestock farming which would decrease the production and lower the damage that food production is causing to the environment. 
+                    All the charts show that meat, dairy and seafood overall contribute more towards eutrophication and produce more greenhouse gases, 
+                    as well as take up more water and land. A large amount land is used for livestock and two-thirds of greenhouse gas emissions stem from animal produce.
+                    In fact, just by solely producing and consuming beef from a dairy herd would significantly decrease the impact of beef to the environment.
+                </p>
+                <p>By lowering the demand for meat, consumers will be able to decrease all the adverse impacts of food production as it will lower the land required for agriculture,
+                    decrease the greenhouse gas emissions from livestock farming, and reduce the water required overall. 
+                </p>
+            </section> 
+
+            <br />      
+        </article>
+        
+        <footer><p>Janice Ridwan (101994340) COS30045 Data Visualisation Project</p></footer>
 
     </body>
 </html>
